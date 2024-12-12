@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMusic - User Uploads</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyMusic</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#music-player">Music</a>
+            <a href="#discography">Discography</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About the Artist</h2>
+        <p>Welcome to MyMusic, where users can add their favorite songs and albums!</p>
+    </section>
+
+    <section id="music-player">
+        <h2>Listen to My Music</h2>
+        <audio controls>
+            <source src="your-song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="add-music">
+        <h2>Add Your Music</h2>
+        <form id="music-form">
+            <input type="text" id="title" placeholder="Song Title" required>
+            <input type="text" id="albumCover" placeholder="Album Cover URL" required>
+            <input type="text" id="trackUrl" placeholder="Track URL" required>
+            <button type="submit">Add Song</button>
+        </form>
+    </section>
+
+    <section id="discography">
+        <h2>Discography</h2>
+        <div id="album-container">
+            <!-- Albums will be dynamically added here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Follow us on:</p>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
